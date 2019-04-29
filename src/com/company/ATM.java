@@ -35,6 +35,7 @@ public class ATM extends Account{
                                     System.out.print("Enter amount to deposit: ");
                                     int deposit = input.nextInt();
                                     deposit(deposit, account);
+                                    input.nextLine();
                                     break;
                                 case 3:
                                     System.out.println(checkBalance(account));
