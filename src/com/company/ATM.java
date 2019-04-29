@@ -24,10 +24,28 @@ public class ATM extends Account{
                     System.out.print("Enter your PIN: ");
                     int pin = input.nextInt();
                     if (account.getPIN() == pin) {
-                        System.out.println(checkBalance(account));
-                        break;
+                        String cont = "";
+                        while(!cont.equalsIgnoreCase("n")){
+                            System.out.print("Please choose options: 1 - Withdraw 2-Deposit 3-Check Balance: ");
+                            int option = input.nextInt();
+                            switch (option){
+                                case 1: withdraw(account);
+                                    break;
+                                case 2:
+                                    System.out.print("Enter amount to deposit: ");
+                                    int deposit = input.nextInt();
+                                    deposit(deposit, account);
+                                    break;
+                                case 3:
+                                    System.out.println(checkBalance(account));
+                                    break;
+                            }
+                            System.out.print("Will you like to do something else: (y/n)");
+                            cont=input.nextLine();
+                        }
                     } else {
                         System.out.println("Wrong PIN, please try again");
+                        System.out.println("The account has been locked, please contact customer service");
                     }
                     count++;
                 }
