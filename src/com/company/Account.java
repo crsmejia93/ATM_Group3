@@ -3,7 +3,7 @@ package com.company;
 public class Account {
     private String accntNum;
     private String userName;
-    private long balance;
+    private float balance;
     private int PIN;
 
 
@@ -23,11 +23,11 @@ public class Account {
         this.userName = userName;
     }
 
-    public long getBalance() {
+    public float getBalance() {
         return balance;
     }
 
-    public void setBalance(long balance) {
+    public void setBalance(float balance) {
         this.balance = balance;
     }
 
