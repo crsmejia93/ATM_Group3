@@ -62,9 +62,10 @@ public class ATM extends Account{
                         //This break statement will only run if there are no more transactions needed
                         //it will break out of the parent while-loop
                         break;
-                    } else {
+                    } else if(count <2){
                         System.out.println("Wrong PIN, please try again");
-                        System.out.println("The account has been locked, please contact customer service");
+                    }else{
+                        System.out.println("The account has been locked, please contact customer service.");
                     }
                     count++;//counter
                 }//end-while
