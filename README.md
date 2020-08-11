@@ -9,4 +9,5 @@ transactions. Once the user has finished using the ATM a receipt will be printed
 the current balanace.
 
 **Technologies Used**: Java, Object-Oriented Programming, ArrayList.
-**Try It**: https://onlinegdb.com/ByrSCLgGw
+
+[![Run on Repl.it](https://repl.it/badge/github/crsmejia93/ATM_Group3)](https://repl.it/github/crsmejia93/ATM_Group3)
