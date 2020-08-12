@@ -1,2 +1,2 @@
-language = "java10"
-run = "run = \""
+language = "java"
+run = "cd src/com/company && javac Main.java ATM.java Account.java && cd .. && cd .. && java com.company.Main"
